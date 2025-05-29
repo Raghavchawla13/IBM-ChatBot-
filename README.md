@@ -75,6 +75,7 @@ This chatbot was created using **Watson Assistant** with no programming required
 - Go to your skill’s **Intents** section and create intents like:
   - `#greet` → Hi, Hello, Good morning
   - `#help` → I need help, Can you assist me?
+  - `#menu` → Menu For Breakfast,Lunch,Dinner?
   - `#faq_booking` → How can I book a slot?
 
 - Then go to **Entities** (optional) if you want the bot to recognize names, products, etc.
