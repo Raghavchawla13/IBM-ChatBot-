@@ -1,64 +1,118 @@
-# 🤖 Chawla Restaurant Chatbot
+# 💬 AI Chatbot using IBM Watson Assistant
 
-Welcome to the official repository of the **Chawla Restaurant Chatbot** – a no-code conversational assistant created to improve customer experience by providing information on food menus, hotel room bookings, and feedback collection.
-
-
-
-## 🍽️ What It Does
-
-This chatbot helps users:
-
-- Greet users with “Hi” or “Hello”
-- Show the **restaurant location**
-- Display the **menu** for:
-  - Breakfast
-  - Lunch
-  - Dinner
-- Book a **hotel room** with price details
-- Collect **ratings and feedback** for improvements
-- End conversations with a thank-you message
-
-
-
-## 🚀 How to Use the Chatbot
-
-### Step 1: Start the Chat
-Type: `Hi` or `Hello`
-
-### Step 2: Explore Features
-You can ask things like:
-- `Show me the breakfast menu`
-- `What is the lunch menu today?`
-- `I want to book a room`
-- `Where is the restaurant located?`
-- `I'd like to leave a review`
-
-### Step 3: Booking a Room
-- The chatbot will ask for room type and provide charges.
-- Confirm to complete the booking.
-
-### Step 4: Give Feedback
-- Type `I want to give feedback` or `Rate your service`
-- Select a rating (1–5) and submit your suggestion.
-
-### Step 5: End the Conversation
-The chatbot says: `Thank you for using our service!`
-
-
-
-## 📸 Demo Screenshots
-
-![Screenshot 1]([Chatbot1.png](https://github.com/Raghavchawla13/IBM-ChatBot-/commit/b36c6dd1ed39e523262c062470a70d8b0fc87bfa))
-
-
-
-
-## 🛠 Platform Used
-
-- **IBM Watson Assistant** (no-code)
-- Designed using drag-and-drop interface and intent mapping
+This project is a  built using **IBM Watson Assistant** on IBM Cloud. The assistant is capable of understanding natural language and engaging in multi-turn conversations. This guide explains how to replicate or understand the setup of this chatbot.
 
 ---
 
+## 📌 Table of Contents
 
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Step-by-Step Setup](#step-by-step-setup)
+  - [1. Create IBM Cloud Account](#1-create-ibm-cloud-account)
+  - [2. Set Up Watson Assistant Service](#2-set-up-watson-assistant-service)
+  - [3. Create Assistant and Skill](#3-create-assistant-and-skill)
+  - [4. Build the Dialog Flow](#4-build-the-dialog-flow)
+  - [5. Test Your Assistant](#5-test-your-assistant)
+  - [6. Deploy via Web Chat](#6-deploy-via-web-chat)
+- [Preview](#preview)
+- [Future Improvements](#future-improvements)
+- [Credits](#credits)
+- [License](#license)
 
+---
+
+## 🧠 Overview
+
+This chatbot was created using **Watson Assistant** with no programming required. It handles common queries, offers dynamic responses, and can be easily embedded in websites or applications using IBM’s Web Chat feature.
+
+---
+
+## ✅ Prerequisites
+
+- IBM Cloud Account → [Sign Up](https://cloud.ibm.com/registration)
+- Internet browser
+- Basic understanding of chatbot logic
+- No coding or technical setup required
+
+---
+
+## 🛠️ Step-by-Step Setup
+
+### 1. Create IBM Cloud Account
+
+- Go to [https://cloud.ibm.com](https://cloud.ibm.com)
+- Sign up for a free account (no credit card required)
+
+---
+
+### 2. Set Up Watson Assistant Service
+
+- Go to the [Watson Assistant page](https://cloud.ibm.com/catalog/services/watson-assistant)
+- Click **Create**
+- Choose the **Lite Plan** (free tier)
+- Wait for the service to be created in your IBM Cloud dashboard
+
+---
+
+### 3. Create Assistant and Skill
+
+#### Assistant:
+- Open Watson Assistant
+- Click **Create Assistant**
+- Name your assistant (e.g., “Virtual Support Bot”)
+
+#### Skill:
+- Inside the Assistant, click **Add dialog skill**
+- Choose **Create skill**
+- Select **Dialog skill**
+- Name the skill (e.g., “Helpdesk Flow”) and click **Create**
+
+---
+
+### 4. Build the Dialog Flow
+
+- Go to your skill’s **Intents** section and create intents like:
+  - `#greet` → Hi, Hello, Good morning
+  - `#help` → I need help, Can you assist me?
+  - `#faq_booking` → How can I book a slot?
+
+- Then go to **Entities** (optional) if you want the bot to recognize names, products, etc.
+
+- Go to **Dialog** and build conversation nodes using:
+  - Conditions (e.g., `#greet`)
+  - Responses (e.g., “Hello! How can I help you today?”)
+  - Add **context** and **slots** for more advanced flows
+
+---
+
+### 5. Test Your Assistant
+
+- Use the **Try it out** window in the top-right corner
+- Type sample messages and verify the chatbot behaves correctly
+
+---
+
+### 6. Deploy via Web Chat
+
+1. Go to your Assistant → **Integrations**
+2. Click on **Web Chat**
+3. Click **Add integration**
+4. Customize the appearance and copy the generated **embed code**
+5. Paste the script into the `<body>` of your website's `index.html`
+
+Example:
+```html
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "your-integration-id",
+      region: "your-region", 
+      serviceInstanceID: "your-service-id",
+      onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t = document.createElement('script');
+    t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
