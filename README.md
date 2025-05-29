@@ -2,7 +2,7 @@
 
 Welcome to the official repository of the **Chawla Restaurant Chatbot** – a no-code conversational assistant created to improve customer experience by providing information on food menus, hotel room bookings, and feedback collection.
 
----
+
 
 ## 🍽️ What It Does
 
@@ -18,7 +18,7 @@ This chatbot helps users:
 - Collect **ratings and feedback** for improvements
 - End conversations with a thank-you message
 
----
+
 
 ## 🚀 How to Use the Chatbot
 
@@ -44,14 +44,14 @@ You can ask things like:
 ### Step 5: End the Conversation
 The chatbot says: `Thank you for using our service!`
 
----
+
 
 ## 📸 Demo Screenshots
 
-![Chat Screenshot 1]([Chatbot1.png](https://github.com/Raghavchawla13/IBM-ChatBot-/commit/b36c6dd1ed39e523262c062470a70d8b0fc87bfa))
-![Chat Screenshot 2](assets/chat2.png)
+![Screenshot 1]([Chatbot1.png](https://github.com/Raghavchawla13/IBM-ChatBot-/commit/b36c6dd1ed39e523262c062470a70d8b0fc87bfa))
 
----
+
+
 
 ## 🛠 Platform Used
 
@@ -60,5 +60,5 @@ The chatbot says: `Thank you for using our service!`
 
 ---
 
-## 📁 Repository Contents
+
 
