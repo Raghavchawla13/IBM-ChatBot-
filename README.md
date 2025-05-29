@@ -48,7 +48,7 @@ The chatbot says: `Thank you for using our service!`
 
 ## 📸 Demo Screenshots
 
-![Chat Screenshot 1](assets/chat1.png)
+![Chat Screenshot 1](Chatbot1.png)
 ![Chat Screenshot 2](assets/chat2.png)
 
 ---
