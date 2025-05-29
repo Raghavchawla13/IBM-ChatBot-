@@ -48,7 +48,7 @@ The chatbot says: `Thank you for using our service!`
 
 ## 📸 Demo Screenshots
 
-![Chat Screenshot 1](Chatbot1.png)
+![Chat Screenshot 1]([Chatbot1.png](https://github.com/Raghavchawla13/IBM-ChatBot-/commit/b36c6dd1ed39e523262c062470a70d8b0fc87bfa))
 ![Chat Screenshot 2](assets/chat2.png)
 
 ---
