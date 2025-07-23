@@ -3,6 +3,14 @@
 This project is a  built using **IBM Watson Assistant** on IBM Cloud. The assistant is capable of understanding natural language and engaging in multi-turn conversations. This guide explains how to replicate or understand the setup of this chatbot.
 
 ---
+## overview 
+![Picture 1](https://github.com/Raghavchawla13/IBM-ChatBot-/blob/main/Chatbot%202.png)
+![Picture 2](https://github.com/Raghavchawla13/IBM-ChatBot-/blob/main/chatbot%20complete%20overview.png)
+![Picture 3](https://github.com/Raghavchawla13/IBM-ChatBot-/blob/main/chatbot%204%20preview.png)
+![Picture 4](https://github.com/Raghavchawla13/IBM-ChatBot-/blob/main/chatbot%205%20preview.png)
+
+
+
 
 ## 📌 Table of Contents
 
